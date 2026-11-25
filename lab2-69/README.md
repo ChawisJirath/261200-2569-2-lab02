@@ -3,30 +3,55 @@ what should be instance variables?
 what should be instance methods?
 what should be class variables?
 what should be class methods?
+
 1.1 instance variable
+
 model ชนิด String ชื่อรุ่น
+
 roomVolume ชนิด double ปริมาตรห้องที่เครื่องดูแล
+
 on ชนิด boolean เครื่องเปิดอยู่หรือไม่
+
 fanSpeed ชนิด int ระดับพัดลม (0)=>ปิด ,(1-3)=>เปิด
+
 pm2_5 ชนิด double ค่าฝุ่น PM2.5 ปัจจุบันในห้อง
+
 mode ชนิด enum โหมดการทำงานกำหนดให้มีแค่สามโหมดการทำงาน MANUAL,AUTO,SLEEP
+
 1.2 instance methods
+
 Constructor: AirPurifier(String model,double roomVolume,double initialPm2_5)
+
 void turnOn() เปิด
+
 void turnOff() ปิด
+
 void setFanSpeed(int speed) กำหนดความเร็วพัดลม
+
 void setMode(Mode newMode) เลือกโหมดการทำงาน
+
 void updateAirQuality(double newPm2_5) อัปเดตค่า pm2.5
+
 void applyAutoSpeed() กำหนดค่า fanSpeed อัตโนมัติโดยดูจากค่า pm2.5 โดยที่ต้องเป็น AUTO Mode
+
 Mode getModel() อ่านค่า model
+
 boolean isOn() คืนค่าปิด(false)หรือเปิด(true)
+
 int getFanSpeed() อ่านค่า fan speed
+
 double getPm25() อ่านค่า pm2.5
+
 1.3 class variables
+
 int MAX_FAN_SPEED กำหนดให้เท่ากับ3
+
 int totalPurifiers เริ่มที่0
+
 1.4 class methods
+
 int getTotalPurifiers():คืนจำนวนเครื่องที่สร้างทั้งหมด
+
 String airQualityCategory(double pm25):แปลงค่า PM2.5 เป็นชื่อระดับคุณภาพอากาศ
 
 
@@ -34,6 +59,7 @@ String airQualityCategory(double pm25):แปลงค่า PM2.5 เป็น�
 give an overview of the computation
 what's needed as inputs?
 what's to be returned?
+
 1.AirPurifier(String model, double roomVolume, double initialPm2_5) (Constructor)
    ข้อมูลนำเข้า (Inputs): model (String ชื่อรุ่น), roomVolume (double ปริมาตรห้อง), initialPm2_5 (double ค่าฝุ่น PM2.5 เริ่มต้น)
 
