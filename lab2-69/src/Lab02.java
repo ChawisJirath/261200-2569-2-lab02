@@ -56,5 +56,4 @@ public class Lab02 {
         System.out.println("Turned off purifier1 -> isOn: " + purifier1.isOn() + ", fanSpeed: " + purifier1.getFanSpeed());
         System.out.println("purifier2 state (independent) -> isOn: " + purifier2.isOn() + ", PM2.5: " + purifier2.getPm25());
     }
-
 }
