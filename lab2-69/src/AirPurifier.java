@@ -96,5 +96,4 @@ public class AirPurifier{
     public String getModel(){return this.model;}
     public double getRoomVolume(){return this.roomVolume;}
     public static int getTotalPurifiers(){return totalPurifiers;}
-
 }
